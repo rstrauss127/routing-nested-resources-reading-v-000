@@ -5,6 +5,7 @@ class AuthorsController < ApplicationController
     @posts = @author.posts
     render template: 'posts/index'
   end
+  
   def show
     @author = Author.find(params[:id])
   end
